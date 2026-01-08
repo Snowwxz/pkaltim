@@ -1,15 +1,15 @@
 # Tim 03 - [Subtema]
 
-**PIC:** [PIC Name]  
-**Subtema:** [Detail Subtema]
+**PIC:** Muhammad Navies Ramadhan  
+**Subtema:** Kuliner Khas
 
 ## 👥 Anggota Tim
-1. [Nama 1] (Leader)
-2. [Nama 2]
-3. [Nama 3]
+1. Aurelyo Daffa Zaqwan Anwary
+2. Muhammad Habibi Lhaksono
+3. Muhammad Navies Ramadhan
 
 ## 📝 Deskripsi Project
-[Deskripsi singkat project tim kalian]
+ Web App informatif/ artikel membahas tentang berbagai kuliner di Kalimantan Timur.
 
 ## 🎯 Target Fitur
 - [ ] CRUD lengkap
