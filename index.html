@@ -233,7 +233,7 @@
                 <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
                 <h3 class="text-xl font-bold">PERIODE PEMILIHAN SUBTEMA DITUTUP</h3>
             </div>
-            <p class="text-sm opacity-90">Perubahan subtema hanya dapat dilakukan dengan konfirmasi ke PIC: <a href="https://wa.me/6282157566869" target="_blank" class="underline font-semibold hover:text-yellow-200">WhatsApp Navies</a> atau bicara langsung</p>
+            <p class="text-sm opacity-90">Perubahan subtema hanya dapat dilakukan dengan konfirmasi ke PIC: <a href="https://wa.me/62811103542" target="_blank" class="underline font-semibold hover:text-yellow-200">WhatsApp PIC</a> atau bicara langsung</p>
         </div>
     </section>
 
@@ -245,7 +245,7 @@
                 <h3 class="text-xl font-bold mb-2">Pemilihan Subtema Ditutup</h3>
                 <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">Untuk perubahan subtema, hubungi PIC:</p>
                 <div class="flex flex-col gap-2">
-                    <a href="https://wa.me/6282157566869" target="_blank" 
+                    <a href="https://wa.me/62811103542" target="_blank" 
                        class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-xl font-semibold transition-all flex items-center justify-center gap-2">
                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
                         WhatsApp PIC
@@ -317,10 +317,18 @@
         <div class="text-center mb-12">
             <h2 class="text-3xl md:text-5xl font-bold mb-4">Progress & Aktivitas Tim</h2>
             <p class="text-gray-500 dark:text-gray-400">Data real-time dari GitHub Repository</p>
+            <div id="githubStatus" class="mt-3 inline-flex items-center gap-2 text-xs px-4 py-2 rounded-full bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300">
+                <div class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></div>
+                <span>Menghubungkan ke GitHub API...</span>
+            </div>
         </div>
 
         <div id="teamProgressContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <!-- Will be populated by JavaScript -->
+            <!-- Loading state -->
+            <div class="col-span-full text-center py-12">
+                <div class="inline-block animate-spin rounded-full h-12 w-12 border-b-2 border-emerald-500"></div>
+                <p class="mt-4 text-gray-500">Memuat data dari GitHub...</p>
+            </div>
         </div>
     </section>
 
@@ -332,7 +340,7 @@
                 <h3 class="text-xl font-bold mb-2">Section Ini Ditutup</h3>
                 <p class="text-sm text-gray-600 dark:text-gray-300 mb-4">Lihat progress tim di section di atas. Untuk perubahan data, hubungi PIC:</p>
                 <div class="flex flex-col gap-2">
-                    <a href="https://wa.me/6282157566869" target="_blank" 
+                    <a href="https://wa.me/62811103542" target="_blank" 
                        class="bg-green-600 hover:bg-green-700 text-white px-6 py-3 rounded-xl font-semibold transition-all flex items-center justify-center gap-2">
                         <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
                         WhatsApp PIC
@@ -735,8 +743,6 @@
             p.insertAdjacentElement('afterend', wrapper);
         });
 
-        const state = { claims: {}, submissions: {} };
-
         // Modal logic
         const modal = document.getElementById('claimModal');
         const openClaimModalBtn = document.getElementById('openClaimModal');
@@ -818,6 +824,9 @@
             });
         }
 
+        // State management
+        const state = { claims: {}, submissions: {}, teamsInfo: {}, teamCommits: {} };
+
         // Configuration
         const CLOSING_MODE = true; // Set to true to close subtema selection
         
@@ -830,14 +839,55 @@
             'X-GitHub-Api-Version': '2022-11-28',
         };
 
+        // Update GitHub status indicator
+        function updateGitHubStatus(status, message, isError = false) {
+            const statusEl = document.getElementById('githubStatus');
+            if (!statusEl) return;
+            
+            const colors = {
+                loading: 'bg-blue-100 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300',
+                success: 'bg-emerald-100 text-emerald-700 dark:bg-emerald-900/30 dark:text-emerald-300',
+                error: 'bg-red-100 text-red-700 dark:bg-red-900/30 dark:text-red-300',
+                warning: 'bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300'
+            };
+            
+            const icons = {
+                loading: '<div class="w-2 h-2 rounded-full bg-blue-500 animate-pulse"></div>',
+                success: '<div class="w-2 h-2 rounded-full bg-emerald-500"></div>',
+                error: '<div class="w-2 h-2 rounded-full bg-red-500"></div>',
+                warning: '<div class="w-2 h-2 rounded-full bg-amber-500"></div>'
+            };
+            
+            statusEl.className = `mt-3 inline-flex items-center gap-2 text-xs px-4 py-2 rounded-full ${colors[status]}`;
+            statusEl.innerHTML = `${icons[status]}<span>${message}</span>`;
+        }
+
         async function fetchClaims() {
+            console.log('Fetching claims from GitHub Issues...');
             try {
                 const res = await fetch(`https://api.github.com/repos/${owner}/${repo}/issues?state=all&per_page=100&sort=updated&direction=desc`, {
                     headers: ghHeaders,
                     cache: 'no-store',
                     mode: 'cors',
                 });
-                if (!res.ok) throw new Error(`HTTP ${res.status}`);
+                
+                // Check rate limit
+                const remaining = res.headers.get('X-RateLimit-Remaining');
+                const limit = res.headers.get('X-RateLimit-Limit');
+                const resetTime = res.headers.get('X-RateLimit-Reset');
+                console.log(`GitHub API Rate Limit: ${remaining}/${limit}`);
+                
+                if (!res.ok) {
+                    if (res.status === 403 && remaining === '0' && resetTime) {
+                        const resetDate = new Date(parseInt(resetTime) * 1000);
+                        const waitTime = Math.ceil((resetDate - new Date()) / 60000);
+                        updateGitHubStatus('error', `⚠️ GitHub Rate Limit! Reset ${waitTime} menit lagi`);
+                        console.error(`Rate limit exceeded. Resets at ${resetDate.toLocaleTimeString('id-ID')}`);
+                    } else if (res.status === 403) {
+                        updateGitHubStatus('error', '⚠️ GitHub API Terbatas - Data Lokal Aktif');
+                    }
+                    throw new Error(`HTTP ${res.status}`);
+                }
                 const issues = await res.json();
                 const claimsMap = {};
 
@@ -863,13 +913,15 @@
                 });
 
                 state.claims = claimsMap;
+                console.log('Claims fetched:', claimsMap);
                 syncUI();
             } catch (err) {
-                console.warn('Gagal fetch issues subtema:', err);
+                console.error('Gagal fetch issues subtema:', err);
             }
         }
 
         async function fetchSubmissions() {
+            console.log('Fetching submissions (PRs) from GitHub...');
             try {
                 const res = await fetch(`https://api.github.com/repos/${owner}/${repo}/pulls?state=all&per_page=100&sort=updated&direction=desc`, {
                     headers: ghHeaders,
@@ -898,9 +950,10 @@
                 });
 
                 state.submissions = submissions;
+                console.log('Submissions fetched:', submissions);
                 syncUI();
             } catch (err) {
-                console.warn('Gagal fetch PR submissions:', err);
+                console.error('Gagal fetch PR submissions:', err);
             }
         }
 
@@ -985,6 +1038,7 @@
 
         // Fetch team members from GitHub Issues
         async function fetchTeamMembers() {
+            console.log('Fetching team members from GitHub Issues...');
             try {
                 const res = await fetch(`https://api.github.com/repos/${owner}/${repo}/issues?state=all&per_page=100`, {
                     headers: ghHeaders,
@@ -1019,14 +1073,15 @@
                 });
 
                 state.teamsInfo = teamsInfo;
-                renderTeamProgress();
+                console.log('Teams Info fetched:', teamsInfo);
             } catch (err) {
-                console.warn('Gagal fetch team members:', err);
+                console.error('Gagal fetch team members:', err);
             }
         }
 
         // Fetch commits for progress tracking
         async function fetchTeamCommits() {
+            console.log('Fetching team commits from GitHub...');
             try {
                 const res = await fetch(`https://api.github.com/repos/${owner}/${repo}/commits?per_page=100`, {
                     headers: ghHeaders,
@@ -1056,24 +1111,30 @@
                 });
 
                 state.teamCommits = teamCommits;
-                renderTeamProgress();
+                console.log('Team Commits fetched:', teamCommits);
             } catch (err) {
-                console.warn('Gagal fetch commits:', err);
+                console.error('Gagal fetch commits:', err);
             }
         }
 
         // Render team progress cards
         function renderTeamProgress() {
+            console.log('Rendering team progress...');
+            console.log('Current state:', state);
             const container = document.getElementById('teamProgressContainer');
-            if (!container) return;
+            if (!container) {
+                console.error('Container teamProgressContainer not found!');
+                return;
+            }
 
             const html = [];
             for (let i = 1; i <= 12; i++) {
                 const teamNum = i.toString().padStart(2, '0');
-                const claim = state.claims[i];
-                const submission = state.submissions[i];
-                const commits = state.teamCommits?.[i] || [];
-                const teamInfo = state.teamsInfo?.[i] || teamsData[teamNum];
+                const teamNumInt = parseInt(teamNum, 10);
+                const claim = state.claims?.[teamNumInt] || state.claims?.[i];
+                const submission = state.submissions?.[teamNumInt] || state.submissions?.[i];
+                const commits = state.teamCommits?.[teamNumInt] || state.teamCommits?.[i] || [];
+                const teamInfo = state.teamsInfo?.[teamNumInt] || state.teamsInfo?.[i] || teamsData[teamNum] || teamsData[i];
                 
                 // Calculate progress
                 let progress = 0;
@@ -1090,21 +1151,33 @@
                 const ringColor = progress >= 75 ? 'stroke-emerald-500' : progress >= 50 ? 'stroke-blue-500' : progress >= 25 ? 'stroke-yellow-500' : 'stroke-gray-400';
 
                 const latestCommits = commits.slice(0, 3).map(c => 
-                    `<div class="text-xs py-1.5 px-2 rounded bg-gray-50 dark:bg-gray-800">
+                    `<div class="text-xs py-1.5 px-2 rounded bg-gray-50 dark:bg-gray-800 hover:bg-gray-100 dark:hover:bg-gray-700 transition">
                         <a href="${c.url}" target="_blank" class="font-mono text-blue-600 dark:text-blue-400 hover:underline">${c.sha}</a>
-                        <p class="text-gray-600 dark:text-gray-300 truncate">${c.message}</p>
-                        <p class="text-gray-400 text-xs">${c.author} • ${c.date.toLocaleDateString('id-ID')}</p>
+                        <p class="text-gray-600 dark:text-gray-300 truncate mt-0.5">${c.message}</p>
+                        <p class="text-gray-400 text-xs mt-0.5">${c.author} • ${c.date.toLocaleDateString('id-ID')}</p>
                     </div>`
                 ).join('');
 
+                const teamName = teamInfo?.name || `Tim ${teamNum}`;
+                const members = teamInfo?.members || [];
+                const pic = teamInfo?.pic || '-';
+                
                 html.push(`
-                    <div class="glass-card p-6 rounded-2xl border-t-4 ${claim ? 'border-emerald-500' : 'border-gray-300'}">
+                    <div class="glass-card p-6 rounded-2xl border-t-4 ${claim ? 'border-emerald-500' : 'border-gray-300'} hover:shadow-2xl transition-all duration-300">
+                        <!-- Header dengan Nama Tim dan Progress -->
                         <div class="flex items-start justify-between mb-4">
-                            <div>
-                                <h3 class="text-xl font-bold">Tim ${teamNum}</h3>
-                                <p class="text-sm text-gray-500">${claim?.subtema || 'Belum pilih subtema'}</p>
+                            <div class="flex-1">
+                                <h3 class="text-xl font-bold mb-1">${teamName}</h3>
+                                <div class="flex items-center gap-2 mb-2">
+                                    <span class="text-xs px-2 py-1 rounded-full ${claim ? 'bg-emerald-100 text-emerald-700 dark:bg-emerald-900 dark:text-emerald-200' : 'bg-gray-100 text-gray-600 dark:bg-gray-700 dark:text-gray-300'}">
+                                        ${claim ? '✓ Subtema Terpilih' : '⏳ Belum Pilih'}
+                                    </span>
+                                </div>
+                                <p class="text-sm font-semibold ${claim ? 'text-emerald-600 dark:text-emerald-400' : 'text-gray-500'}">
+                                    ${claim ? '📌 ' + claim.subtema : 'Belum pilih subtema'}
+                                </p>
                             </div>
-                            <div class="relative">
+                            <div class="relative flex-shrink-0">
                                 <svg class="w-20 h-20 progress-ring">
                                     <circle cx="40" cy="40" r="36" stroke="currentColor" stroke-width="6" fill="none" class="text-gray-200 dark:text-gray-700" />
                                     <circle cx="40" cy="40" r="36" stroke="currentColor" stroke-width="6" fill="none" class="${ringColor}" 
@@ -1116,50 +1189,132 @@
                             </div>
                         </div>
 
-                        ${teamInfo ? `
+                        <!-- Informasi Tim dari GitHub Issues -->
                         <div class="mb-4 pb-4 border-b border-gray-200 dark:border-gray-700">
-                            <p class="text-sm font-semibold text-gray-600 dark:text-gray-300">PIC: ${teamInfo.pic || '-'}</p>
-                            <div class="flex flex-wrap gap-1 mt-2">
-                                ${(teamInfo.members || []).map(m => `<span class="text-xs bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-200 px-2 py-0.5 rounded">${m}</span>`).join('')}
+                            <div class="flex items-center gap-2 mb-2">
+                                <span class="text-xs font-semibold text-gray-500 dark:text-gray-400">👤 PIC:</span>
+                                <span class="text-sm font-bold text-gray-700 dark:text-gray-200">${pic}</span>
+                            </div>
+                            ${members.length > 0 ? `
+                            <div class="mb-2">
+                                <span class="text-xs font-semibold text-gray-500 dark:text-gray-400 mb-1 block">👥 Anggota Tim:</span>
+                                <div class="flex flex-wrap gap-1.5">
+                                    ${members.map(m => `<span class="text-xs bg-blue-100 dark:bg-blue-900 text-blue-700 dark:text-blue-200 px-2.5 py-1 rounded-full font-medium">${m}</span>`).join('')}
+                                </div>
+                            </div>
+                            ` : '<p class="text-xs text-gray-400 italic">Data anggota dari GitHub Issues</p>'}
+                            ${teamInfo?.issueUrl ? `
+                            <a href="${teamInfo.issueUrl}" target="_blank" class="text-xs text-blue-600 dark:text-blue-400 hover:underline flex items-center gap-1 mt-2">
+                                🔗 Lihat Issue Tim
+                            </a>
+                            ` : ''}
+                        </div>
+
+                        <!-- Progress Milestones -->
+                        <div class="grid grid-cols-2 gap-2 mb-4 text-xs">
+                            <div class="${claim ? 'bg-emerald-50 dark:bg-emerald-900/20' : 'bg-gray-50 dark:bg-gray-800'} rounded-lg p-2">
+                                <div class="font-semibold ${claim ? 'text-emerald-700 dark:text-emerald-300' : 'text-gray-500'}">${claim ? '✓' : '○'} Subtema</div>
+                            </div>
+                            <div class="${commits.length > 0 ? 'bg-emerald-50 dark:bg-emerald-900/20' : 'bg-gray-50 dark:bg-gray-800'} rounded-lg p-2">
+                                <div class="font-semibold ${commits.length > 0 ? 'text-emerald-700 dark:text-emerald-300' : 'text-gray-500'}">${commits.length > 0 ? '✓' : '○'} Coding</div>
+                            </div>
+                            <div class="${commits.length > 5 ? 'bg-emerald-50 dark:bg-emerald-900/20' : 'bg-gray-50 dark:bg-gray-800'} rounded-lg p-2">
+                                <div class="font-semibold ${commits.length > 5 ? 'text-emerald-700 dark:text-emerald-300' : 'text-gray-500'}">${commits.length > 5 ? '✓' : '○'} Progress+</div>
+                            </div>
+                            <div class="${submission?.status === 'merged' ? 'bg-emerald-50 dark:bg-emerald-900/20' : 'bg-gray-50 dark:bg-gray-800'} rounded-lg p-2">
+                                <div class="font-semibold ${submission?.status === 'merged' ? 'text-emerald-700 dark:text-emerald-300' : 'text-gray-500'}">${submission?.status === 'merged' ? '✓' : '○'} Submit</div>
                             </div>
                         </div>
-                        ` : ''}
 
+                        <!-- Commits & Changelog -->
                         <div class="space-y-2">
-                            <div class="flex items-center justify-between text-sm">
-                                <span class="text-gray-600 dark:text-gray-300">Commits</span>
-                                <span class="font-bold ${commits.length > 0 ? 'text-emerald-600' : 'text-gray-400'}">${commits.length}</span>
+                            <div class="flex items-center justify-between text-sm bg-gray-50 dark:bg-gray-800 rounded-lg p-2">
+                                <span class="text-gray-600 dark:text-gray-300 font-medium">📝 Total Commits</span>
+                                <span class="font-bold ${commits.length > 0 ? 'text-emerald-600 dark:text-emerald-400' : 'text-gray-400'}">${commits.length}</span>
                             </div>
                             ${latestCommits ? `
                             <details class="text-sm">
-                                <summary class="cursor-pointer text-blue-600 dark:text-blue-400 hover:underline">Lihat Changelog</summary>
-                                <div class="mt-2 space-y-1 max-h-48 overflow-y-auto">
+                                <summary class="cursor-pointer text-blue-600 dark:text-blue-400 hover:underline font-semibold py-2 px-3 bg-blue-50 dark:bg-blue-900/20 rounded-lg hover:bg-blue-100 dark:hover:bg-blue-900/30 transition">
+                                    📜 Lihat Changelog (${Math.min(commits.length, 3)} terakhir)
+                                </summary>
+                                <div class="mt-2 space-y-1.5 max-h-64 overflow-y-auto pr-2">
                                     ${latestCommits}
+                                    ${commits.length > 3 ? `<div class="text-center py-2"><a href="https://github.com/${owner}/${repo}/commits" target="_blank" class="text-xs text-blue-600 dark:text-blue-400 hover:underline">Lihat semua ${commits.length} commits →</a></div>` : ''}
                                 </div>
                             </details>
-                            ` : '<p class="text-xs text-gray-400">Belum ada commit</p>'}
+                            ` : '<p class="text-xs text-gray-400 italic bg-gray-50 dark:bg-gray-800 rounded-lg p-3">⏳ Belum ada commit dari tim ini</p>'}
                         </div>
 
+                        <!-- Pull Request Status -->
                         ${submission ? `
                         <div class="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
-                            <a href="${submission.url}" target="_blank" class="text-sm text-blue-600 dark:text-blue-400 hover:underline flex items-center gap-1">
-                                ${submission.status === 'merged' ? '✅' : submission.status === 'open' ? '🔄' : '❌'}
-                                Pull Request ${submission.status}
+                            <a href="${submission.url}" target="_blank" class="block text-sm bg-gradient-to-r ${
+                                submission.status === 'merged' ? 'from-emerald-50 to-emerald-100 dark:from-emerald-900/20 dark:to-emerald-800/20' :
+                                submission.status === 'open' ? 'from-blue-50 to-blue-100 dark:from-blue-900/20 dark:to-blue-800/20' :
+                                'from-gray-50 to-gray-100 dark:from-gray-800 dark:to-gray-700'
+                            } rounded-lg p-3 hover:shadow-md transition">
+                                <div class="flex items-center justify-between">
+                                    <div class="flex items-center gap-2">
+                                        <span class="text-lg">${submission.status === 'merged' ? '✅' : submission.status === 'open' ? '🔄' : '❌'}</span>
+                                        <div>
+                                            <div class="font-bold ${
+                                                submission.status === 'merged' ? 'text-emerald-700 dark:text-emerald-300' :
+                                                submission.status === 'open' ? 'text-blue-700 dark:text-blue-300' :
+                                                'text-gray-700 dark:text-gray-300'
+                                            }">Pull Request ${submission.status}</div>
+                                            <div class="text-xs text-gray-500 dark:text-gray-400 truncate max-w-[200px]">${submission.title || ''}</div>
+                                        </div>
+                                    </div>
+                                    <span class="text-xs text-gray-400">→</span>
+                                </div>
                             </a>
                         </div>
-                        ` : ''}
+                        ` : `
+                        <div class="mt-4 pt-4 border-t border-gray-200 dark:border-gray-700">
+                            <div class="text-center py-3 bg-gray-50 dark:bg-gray-800 rounded-lg">
+                                <p class="text-xs text-gray-500 dark:text-gray-400">🔍 Belum ada Pull Request</p>
+                            </div>
+                        </div>
+                        `}
                     </div>
                 `);
             }
 
             container.innerHTML = html.join('');
+            console.log('Team progress rendered successfully!');
         }
 
         function refreshData() {
-            fetchClaims();
-            fetchSubmissions();
-            fetchTeamMembers();
-            fetchTeamCommits();
+            console.log('Refreshing all data from GitHub...');
+            updateGitHubStatus('loading', 'Memuat data dari GitHub...');
+            
+            // Always render with local data first
+            renderTeamProgress();
+            
+            // Then try to fetch GitHub data
+            let successCount = 0;
+            Promise.all([
+                fetchClaims().then(() => successCount++).catch(err => console.error('Claims failed:', err)),
+                fetchSubmissions().then(() => successCount++).catch(err => console.error('Submissions failed:', err)),
+                fetchTeamMembers().then(() => successCount++).catch(err => console.error('Members failed:', err)),
+                fetchTeamCommits().then(() => successCount++).catch(err => console.error('Commits failed:', err))
+            ]).then(() => {
+                console.log(`Data fetch completed: ${successCount}/4 successful`);
+                if (successCount === 4) {
+                    updateGitHubStatus('success', '✓ Data GitHub berhasil dimuat');
+                } else if (successCount > 0) {
+                    updateGitHubStatus('warning', `⚠️ ${successCount}/4 berhasil - Gunakan data lokal`);
+                } else {
+                    // All failed - likely rate limit
+                    updateGitHubStatus('error', '⚠️ GitHub Rate Limit - Data Lokal Aktif');
+                }
+                // Re-render with any new data
+                renderTeamProgress();
+            }).catch(err => {
+                console.error('Error in refreshData:', err);
+                updateGitHubStatus('error', '⚠️ Error - Menampilkan data lokal');
+                renderTeamProgress();
+            });
         }
 
         // Apply closing mode if enabled
@@ -1170,8 +1325,10 @@
         }
 
         // Initial fetch + polling every 60s
+        console.log('Starting initial data fetch...');
         refreshData();
         setInterval(refreshData, 60000);
+        console.log('Auto-refresh set to 60 seconds');
     </script>
 </body>
 </html>
